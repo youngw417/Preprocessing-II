@@ -1,0 +1,58 @@
+
+header{
+
+    @media @phone{
+        .flex-mix(@direction:column);
+    }
+
+    .header__top{
+        .flex-mix(@justify: space-evenly);
+        border-bottom: 2px dashed @navigation-border;
+        padding: 4rem 10rem;
+        width: 100%;
+
+        @media @phone{
+            .flex-mix(@direction: column);
+        }
+
+        nav{
+            width: 50%;
+            .flex-mix(@justify: space-between);
+            @media @phone{
+                width: 100%;
+                margin-top: 1rem;
+                
+            }
+        }
+
+        
+    }
+
+    .header__bottom{
+        margin: 0 auto;
+        width: 64%;
+        .flex-mix();
+        width: 60%;
+
+        @media @phone{
+            width: 90%;
+            
+            
+        }
+
+    }
+
+    .header__bottom-para{
+        display: none;
+        @media @phone{
+            display: inline-block;
+            border-bottom: 2px dashed @navigation-border;
+            margin-top: 15px;
+
+        }
+    }
+
+}
+
+
+
