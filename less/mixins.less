@@ -1,1 +1,25 @@
 // Mixins in here
+.flex-mix(@justify:center, @align:center, @direction:row){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    flex-direction: @direction;
+
+}
+
+.navigation(){
+    text-decoration: none;
+    color: @font-color;    
+    font-size: 1.8rem;
+
+}
+
+.btn(){
+ width: 80%;
+ border-radius: 10px;
+ padding: 0.8rem 2rem;
+ background-color: @button-bg;
+ color: @white;
+ font-size: 2rem;
+ text-align: center;
+}
